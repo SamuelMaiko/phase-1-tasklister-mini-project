@@ -1,37 +1,86 @@
-html {
-  height: 100%;
-  width: 100%;
-  font-family: "Titillium Web", sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-body {
-  min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
-}
-
-button {
-  font-size: 7px;
-}
-
-#main-content {
-  position: relative;
-  display: flex;
+body{
+  font-family: 'Roboto', Arial;
+  /* font-family: 'Roboto', sans-serif; */
+  display:flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  position:relative;
+  background-image:
+  linear-gradient(to bottom, rgba(112, 114, 128, 0.52), rgba(71, 15, 57, 0.73)),
+  url('./backg.webp');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-attachment: fixed;
+ 
+}
+#main-content{
+position:absolute;
+top:165px;
+padding:20px 8px;
+width:450px;
+text-align:center;
+border-radius:15px;
+box-shadow: 0px 0px 7px rgb(0, 0, 7);
+background-color: rgba(255,255,255,0.1);
 }
 
-#list {
-  margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+h1{
+  color:whitesmoke;
+
+}
+#task-name{
+color:rgb(228, 207, 220);
+font-size:17px;
+}
+#new-task-description{
+  height:28px;
+  margin-left:10px;
+  outline:none;
+  padding-left:10px;
+  border:none;
+  border-radius:5px;
+  box-shadow:0px 5px 4px rgba(0, 0, 0,0.1);
+}
+#button{
+margin-top:15px;
+padding:5px 10px;
+border:none;
+box-shadow:0px 5px 4px rgba(0, 0, 0,0.2);
+border-radius:5px;
+}
+h2{
+  color:whitesmoke;
+  font-size:24px;
+  text-decoration:underline;
+}
+.remove-all{
+  text-decoration: none;
+  font-size:13px;
+  margin-left:19px;
+  padding:2px 2px;
+  background-color: red;
+  color:white;
+  border:none;
+}
+
+#list{
+  text-align: center;
+}
+#tasks{
+  /* list-style-type:none; */
+  margin-top:10px;
+}
+#tasks li{
+  text-align: left;
+  margin-left:165px;
+  color:rgb(4, 215, 243);
+}
+
+#tasks li button{
+  padding:0px 3px;
 }
